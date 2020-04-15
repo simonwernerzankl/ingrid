@@ -1,36 +1,50 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f5f5f5;
   font-family: 'Roboto', sans-serif;
-  margin: 0 0 0;
-  padding: 0;
+  margin: -3px -3px auto;
 }
 
 h1 {
-  font-size: 70px;
-  font-family: 'roboto-bold';
-  margin: 0px
+  font-size: 80px;
+  font-family: 'roboto';
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
 }
 
 h2 {
   font-size: 50px;
-  font-family: 'roboto-bold';
+  font-family: 'roboto';
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
 }
 
 h3 {
   font-size: 32px;
-  font-family: 'roboto-bold';
-  margin: 0px;
+  font-family: 'roboto';
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
 }
 
 p {
   font-size: 16px;
-  font-family: 'roboto-medium';
+  font-family: 'roboto';
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {
   text-decoration: none;
   color: black;
-  font-family: roboto-bold;
+  font-family: roboto;
+  font-weight: 700;
+  font-style: normal;
   font-size: 28px;
   padding-right: 15px;
 }
@@ -55,20 +69,20 @@ a:hover {
 
 .top-hero {
   display: grid;
-  grid-template-columns: 10% 35% 5% 1fr;
-  grid-template-rows: 5% 20% 1fr;
-  min-height: 100vh;
+  grid-template-columns: 15% 30% 1fr 10%;
+  grid-template-rows: 3% 20% 1fr 10%;
+  max-height: 103vh;
   height: min-content;
 }
 
-.header-menu-logo {
-  grid-column-start: 2;
+.header-menu-items {
+  grid-column: 3 / span 2;
   grid-row-start: 2;
 }
 
-.header-menu-items {
-  grid-column: 4 / span 2;
+.header-menu-logo {
   grid-row-start: 2;
+  grid-column-start: 2;
 }
 
 .header-menu-items a {
@@ -76,13 +90,12 @@ a:hover {
 }
 
 .hero-content {
-  grid-column: 2 / span 2;
-  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-row: 3 / span 2;
 }
 
 .hero-content h3 {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 50px 20px 0;
 }
 
 .slack-icon {
@@ -90,56 +103,61 @@ a:hover {
 }
 
 .slack-client {
-  grid-column-start: 4;
-  grid-row-start: 3;
-}
-
-.slack-client img {
-  width: 45vw;
-  padding-top: 2em;
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+  width: 40vw;
 }
 
 .pink-hero {
-  z-index: -1;
-  grid-column: 1 / span 5;
-  /* grid-row: 3 / baseline; */
+  grid-column: 1 / span 4;
+  grid-row: baseline;
   width: 100%;
+}
+
+.features-header {
+  padding-left: 15vw;
+  padding-top: 150px;
 }
 
 .features {
   display: grid;
-  grid-template-columns: 10% repeat(3, 1fr) 10%;
-  padding-top: 200px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 100px;
+  grid-auto-rows: 275px;
+  grid-row-gap: 60px;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 60px;
 }
 
-.features h2 {
-  grid-column-start: 2;
+.feature-content {
+  grid-row-start: 2;
+  grid-column: 1;
 }
 
-.feature1 {
-  grid-column-start: 2;
+.feature6 {
+  outline: solid;
+  padding: 2px;
 }
 
-.feature4 {
-  grid-column-start: 2;
+.what-users-say-heading {
+  padding-left: 15vw;
+  padding-top: 150px;
 }
 
 .what-users-say {
   display: grid;
-  grid-template-columns: 10% repeat(3, 1fr) 10%;
-  padding-top: 150px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 100px;
+  grid-auto-rows: 300px;
+  grid-row gap: 60px;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 60px;
 }
 
 .what-users-say p {
   font-size: 24px;
-}
-
-.testimonial1 {
-  grid-column-start: 2;
-}
-
-.what-users-say h2 {
-  grid-column: 2 / span2;
 }
 
 .what-users-say img {
@@ -148,35 +166,29 @@ a:hover {
 
 .get-started-today {
   display: grid;
-  grid-template-columns: 10% 55% 25% 10%;
-  grid-template-rows: 20% 10% 20%;
-  grid-column-start: 2;
-  padding-top: 50px;
-}
-
-.get-started-today h2 {
-  grid-column-start: 2;
-  grid-row-start: 1;
+  grid-template-columns: 55% 1fr;
+  grid-template-rows: 10% 20% 1fr;
+  padding-top: 150px;
+  padding-left: 15vw;
+  padding-right: 15vw;
 }
 
 .get-started-today p {
-  grid-column-start: 2;
+  grid-row-start: 3;
   font-size: 24px;
-  grid-row-start: 4;
 }
 
 .get-started-today button {
-  grid-row: 3 / span 2;
-  grid-column-start: 3;
+  grid-row: 2 / span 2;
+  grid-column-start: end;
 }
 
 .why-ingrid {
   display: grid;
-  grid-template-columns: 10% 1fr 10%;
+  grid-template-columns: 1fr;
   grid-template-rows: 25% 25% 1fr;
+  padding: 150px 15vw 5vw 15vw;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 200px;
 }
 
 .why-ingrid-content {
