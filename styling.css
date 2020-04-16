@@ -2,203 +2,610 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: #f5f5f5;
-  font-family: 'Roboto', sans-serif;
-  margin: -3px -3px auto;
+@media screen and (min-width: 0px) {
+  body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    margin: -3px -3px auto;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    padding-right: 15px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #ebebeb;
+    max-width: 250px;
+    max-height: 75px;
+    padding-right: 25px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .top-hero {
+    display: grid;
+    grid-template-columns: 15% 40% 1fr 10%;
+    grid-template-rows: 3% 30% 1fr 10%;
+    max-height: 103vh;
+    height: min-content;
+  }
+
+  .lilatri-top {
+    margin: -37px;
+  }
+
+  .header-menu-items {
+    grid-column: 3 / span 2;
+    grid-row-start: 2;
+  }
+
+  .header-menu-logo {
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+
+  .header-menu-items a {
+    padding-right: 30px;
+  }
+
+  .hero-content {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 2;
+  }
+
+  .hero-content h3 {
+    padding: 20px 50px 20px 0;
+  }
+
+  .slack-icon {
+    width: 60px;
+  }
+
+  .slack-client {
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 2;
+    width: 40vw;
+  }
+
+  .pink-hero {
+    grid-column: 1 / span 4;
+    grid-row: baseline;
+    width: 100%;
+  }
+
+  .features-header {
+    padding-left: 15vw;
+    padding-top: 150px;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-auto-rows: 275px;
+    grid-row-gap: 30px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 60px;
+  }
+
+  .feature-content {
+    grid-row-start: 2;
+    grid-column: 1;
+  }
+
+  .feature6 {
+    outline: solid;
+    padding: 2px;
+  }
+
+  .what-users-say-heading {
+    padding-left: 15vw;
+    padding-top: 150px;
+  }
+
+  .what-users-say {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-auto-rows: 300px;
+    grid-row gap: 30px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 60px;
+  }
+
+  .what-users-say p {
+    font-size: 24px;
+  }
+
+  .what-users-say img {
+    max-width: 100px;
+  }
+
+  .get-started-today {
+    display: grid;
+    grid-template-columns: 55% 1fr;
+    grid-template-rows: 15% 20% 1fr;
+    padding-top: 150px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+
+  .get-started-today p {
+    grid-row-start: 2;
+    font-size: 24px;
+  }
+
+  .get-started-today button {
+    grid-row: 2 / span 2;
+    grid-column-start: end;
+  }
+
+  .why-ingrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 25% 1fr;
+    padding: 150px 15vw 5vw 15vw;
+    text-align: center;
+  }
+
+  .why-ingrid-content {
+    grid-column-start: 2;
+  }
+
+  .why-ingrid-content p {
+    font-size: 24px;
+  }
+
+  .lilatri-bottom {
+    float: right;
+  }
 }
 
-h1 {
-  font-size: 80px;
-  font-family: 'roboto';
-  font-weight: 700;
-  font-style: normal;
-  margin: 0;
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    margin: -3px -3px auto;
+  }
+
+  h1 {
+    font-size: 42px;
+    font-family: 'roboto';
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-family: 'roboto';
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-family: 'roboto';
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+  }
+
+  p {
+    font-size: 14px;
+    font-family: 'roboto';
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: roboto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    padding-right: 15px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #ebebeb;
+    max-width: 250px;
+    max-height: 75px;
+    padding-right: 25px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .top-hero {
+    display: grid;
+    grid-template-columns: 15% 40% 1fr 10%;
+    grid-template-rows: 3% 20% 1fr 10%;
+    max-height: 103vh;
+    height: min-content;
+  }
+
+  .lilatri-top {
+    margin: -25px;
+  }
+
+  .header-menu-items {
+    grid-column: 3 / span 2;
+    grid-row-start: 2;
+  }
+
+  .header-menu-logo {
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+
+  .header-menu-items a {
+    padding-right: 30px;
+  }
+
+  .hero-content {
+    grid-column-start: 2;
+    grid-row: 3 / span 2;
+  }
+
+  .hero-content h3 {
+    padding: 20px 50px 20px 0;
+  }
+
+  .slack-icon {
+    width: 60px;
+  }
+
+  .slack-client {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+    width: 40vw;
+  }
+
+  .pink-hero {
+    grid-column: 1 / span 4;
+    grid-row: baseline;
+    width: 100%;
+  }
+
+  .features-header {
+    padding-left: 15vw;
+    padding-top: 150px;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-auto-rows: 275px;
+    grid-row-gap: 30px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 60px;
+  }
+
+  .feature-content {
+    grid-row-start: 2;
+    grid-column: 1;
+  }
+
+  .feature6 {
+    outline: solid;
+    padding: 2px;
+  }
+
+  .what-users-say-heading {
+    padding-left: 15vw;
+    padding-top: 150px;
+  }
+
+  .what-users-say {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-auto-rows: 300px;
+    grid-row gap: 30px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 60px;
+  }
+
+  .what-users-say p {
+    font-size: 24px;
+  }
+
+  .what-users-say img {
+    max-width: 100px;
+  }
+
+  .get-started-today {
+    display: grid;
+    grid-template-columns: 55% 1fr;
+    grid-template-rows: 15% 20% 1fr;
+    padding-top: 150px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+
+  .get-started-today p {
+    grid-row-start: 2;
+    font-size: 24px;
+  }
+
+  .get-started-today button {
+    grid-row: 2 / span 2;
+    grid-column-start: end;
+  }
+
+  .why-ingrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 25% 1fr;
+    padding: 150px 15vw 5vw 15vw;
+    text-align: center;
+  }
+
+  .why-ingrid-content {
+    grid-column-start: 2;
+  }
+
+  .why-ingrid-content p {
+    font-size: 24px;
+  }
+
+  .lilatri-bottom {
+    float: right;
+  }
 }
 
-h2 {
-  font-size: 50px;
-  font-family: 'roboto';
-  font-weight: 700;
-  font-style: normal;
-  margin: 0;
-}
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    margin: -3px -3px auto;
+  }
 
-h3 {
-  font-size: 32px;
-  font-family: 'roboto';
-  font-weight: 700;
-  font-style: normal;
-  margin: 0;
-}
+  h1 {
+    font-size: 80px;
+    font-family: 'roboto';
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+  }
 
-p {
-  font-size: 16px;
-  font-family: 'roboto';
-  font-weight: 400;
-  font-style: normal;
-}
+  h2 {
+    font-size: 50px;
+    font-family: 'roboto';
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+  }
 
-a {
-  text-decoration: none;
-  color: black;
-  font-family: roboto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 28px;
-  padding-right: 15px;
-}
+  h3 {
+    font-size: 32px;
+    font-family: 'roboto';
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+  }
 
-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  background-color: white;
-  cursor: pointer;
-  border-radius: 8px;
-  border: 2px solid #ebebeb;
-  max-width:250px;
-  max-height: 75px;
-  padding-right: 25px;
-}
+  p {
+    font-size: 16px;
+    font-family: 'roboto';
+    font-weight: 400;
+    font-style: normal;
+  }
 
-a:hover {
-  text-decoration: underline;
-}
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: roboto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    padding-right: 15px;
+  }
 
-.top-hero {
-  display: grid;
-  grid-template-columns: 15% 30% 1fr 10%;
-  grid-template-rows: 3% 20% 1fr 10%;
-  max-height: 103vh;
-  height: min-content;
-}
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #ebebeb;
+    max-width:250px;
+    max-height: 75px;
+    padding-right: 25px;
+  }
 
-.header-menu-items {
-  grid-column: 3 / span 2;
-  grid-row-start: 2;
-}
+  a:hover {
+    text-decoration: underline;
+  }
 
-.header-menu-logo {
-  grid-row-start: 2;
-  grid-column-start: 2;
-}
+  .top-hero {
+    display: grid;
+    grid-template-columns: 15% 30% 1fr 10%;
+    grid-template-rows: 3% 20% 1fr 10%;
+    max-height: 103vh;
+    height: min-content;
+  }
 
-.header-menu-items a {
-  padding-right: 30px;
-}
+  .header-menu-items {
+    grid-column: 3 / span 2;
+    grid-row-start: 2;
+  }
 
-.hero-content {
-  grid-column-start: 2;
-  grid-row: 3 / span 2;
-}
+  .header-menu-logo {
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
 
-.hero-content h3 {
-  padding: 20px 50px 20px 0;
-}
+  .header-menu-items a {
+    padding-right: 30px;
+  }
 
-.slack-icon {
-  width: 60px;
-}
+  .hero-content {
+    grid-column-start: 2;
+    grid-row: 3 / span 2;
+  }
 
-.slack-client {
-  grid-column: 3 / span 2;
-  grid-row: 3 / span 2;
-  width: 40vw;
-}
+  .hero-content h3 {
+    padding: 20px 50px 20px 0;
+  }
 
-.pink-hero {
-  grid-column: 1 / span 4;
-  grid-row: baseline;
-  width: 100%;
-}
+  .slack-icon {
+    width: 60px;
+  }
 
-.features-header {
-  padding-left: 15vw;
-  padding-top: 150px;
-}
+  .slack-client {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+    width: 40vw;
+  }
 
-.features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 100px;
-  grid-auto-rows: 275px;
-  grid-row-gap: 60px;
-  padding-left: 15vw;
-  padding-right: 15vw;
-  padding-top: 60px;
-}
+  .pink-hero {
+    grid-column: 1 / span 4;
+    grid-row: baseline;
+    width: 100%;
+  }
 
-.feature-content {
-  grid-row-start: 2;
-  grid-column: 1;
-}
+  .features-header {
+    padding-left: 15vw;
+    padding-top: 150px;
+  }
 
-.feature6 {
-  outline: solid;
-  padding: 2px;
-}
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 100px;
+    grid-auto-rows: 275px;
+    grid-row-gap: 60px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 60px;
+  }
 
-.what-users-say-heading {
-  padding-left: 15vw;
-  padding-top: 150px;
-}
+  .feature-content {
+    grid-row-start: 2;
+    grid-column: 1;
+  }
 
-.what-users-say {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 100px;
-  grid-auto-rows: 300px;
-  grid-row gap: 60px;
-  padding-left: 15vw;
-  padding-right: 15vw;
-  padding-top: 60px;
-}
+  .feature6 {
+    outline: solid;
+    padding: 2px;
+  }
 
-.what-users-say p {
-  font-size: 24px;
-}
+  .what-users-say-heading {
+    padding-left: 15vw;
+    padding-top: 150px;
+  }
 
-.what-users-say img {
-  max-width: 100px;
-}
+  .what-users-say {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 100px;
+    grid-auto-rows: 300px;
+    grid-row gap: 60px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 60px;
+  }
 
-.get-started-today {
-  display: grid;
-  grid-template-columns: 55% 1fr;
-  grid-template-rows: 10% 20% 1fr;
-  padding-top: 150px;
-  padding-left: 15vw;
-  padding-right: 15vw;
-}
+  .what-users-say p {
+    font-size: 24px;
+  }
 
-.get-started-today p {
-  grid-row-start: 3;
-  font-size: 24px;
-}
+  .what-users-say img {
+    max-width: 100px;
+  }
 
-.get-started-today button {
-  grid-row: 2 / span 2;
-  grid-column-start: end;
-}
+  .get-started-today {
+    display: grid;
+    grid-template-columns: 55% 1fr;
+    grid-template-rows: 10% 20% 1fr;
+    padding-top: 150px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
 
-.why-ingrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 25% 25% 1fr;
-  padding: 150px 15vw 5vw 15vw;
-  text-align: center;
-}
+  .get-started-today p {
+    grid-row-start: 3;
+    font-size: 24px;
+  }
 
-.why-ingrid-content {
-  grid-column-start: 2;
-}
+  .get-started-today button {
+    grid-row: 2 / span 2;
+    grid-column-start: end;
+  }
 
-.why-ingrid-content p {
-  font-size: 24px;
-}
+  .why-ingrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 25% 1fr;
+    padding: 150px 15vw 5vw 15vw;
+    text-align: center;
+  }
 
-.lilatri-bottom {
-  float: right;
+  .why-ingrid-content {
+    grid-column-start: 2;
+  }
+
+  .why-ingrid-content p {
+    font-size: 24px;
+  }
+
+  .lilatri-bottom {
+    float: right;
+  }
 }
