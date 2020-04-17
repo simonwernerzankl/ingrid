@@ -190,9 +190,16 @@ a:hover {
   font-size: 24px;
 }
 
-.lilatri-bottom {
-  float: right;
-  margin: -37px;
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+}
+
+.footer img {
+  grid-column-start: baseline;
+  margin-right: -37px;
+  margin-bottom: -37px;
 }
 
 @media screen and (min-width: 768px) {
@@ -395,10 +402,6 @@ a:hover {
   .why-ingrid-content p {
     font-size: 24px;
   }
-
-  .lilatri-bottom {
-    float: right;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -592,9 +595,5 @@ a:hover {
 
   .why-ingrid-content p {
     font-size: 24px;
-  }
-
-  .lilatri-bottom {
-    float: right;
   }
 }
