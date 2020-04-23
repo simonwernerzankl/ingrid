@@ -1,0 +1,47 @@
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
+  margin: -3px -3px auto;
+  min-height: 100vh;
+  height: min-content;
+  display: grid;
+  grid-template-columns: 1fr 350px 1fr;
+  grid-template-rows: 25vh 50vh 25vh;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+  max-width: 300px;
+  max-height: 75px;
+  padding: 15px;
+}
+
+.lilatri-img {
+  width: 40vw;
+}
+
+.page-content {
+  padding-top: 25vh;
+}
+
+.content {
+  grid-column-start: 3;
+}
+
+.footer {
+  grid-column-start: baseline;
+  grid-row-start: baseline;
+  width: 40vw;
+}
