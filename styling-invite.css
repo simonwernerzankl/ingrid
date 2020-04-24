@@ -11,7 +11,7 @@ body {
   height: min-content;
   display: grid;
   grid-template-columns: 1fr 350px 1fr;
-  grid-template-rows: 25vh 50vh 25vh;
+  grid-template-rows: auto 1fr auto;
 }
 
 button {
@@ -28,20 +28,32 @@ button {
   padding: 15px;
 }
 
+button img {
+  max-width: 30px;
+  height: auto;
+}
+
 .lilatri-img {
   width: 40vw;
 }
 
 .page-content {
+  grid-column-start: 2;
+  grid-row-start: 1;
   padding-top: 25vh;
 }
 
 .content {
-  grid-column-start: 3;
+  grid-column-start: 2;
 }
 
-.footer {
-  grid-column-start: baseline;
+footer {
+  grid-column: 1 / span 3;
   grid-row-start: baseline;
+}
+
+.pinktri-img {
+  float: right;
   width: 40vw;
+  margin: 0 -5px -3px 0;
 }
