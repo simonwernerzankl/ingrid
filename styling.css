@@ -66,13 +66,13 @@ a:hover {
 .top-hero {
   display: grid;
   grid-template-columns: 15% 35% 15%;
-  grid-template-rows: 3% 25% 50% 10%;
-  max-height: 103vh;
+  grid-template-rows: 3% 25% 1fr auto;
+  min-height: 100vh;
   height: min-content;
 }
 
 .lilatri-top {
-  margin: -37px;
+  width: 40vw;
 }
 
 .header-menu-items {
@@ -112,9 +112,9 @@ a:hover {
 }
 
 .pink-hero {
-  grid-column: 1 / span 4;
-  grid-row: baseline;
-  width: 100%;
+  grid-row-start: baseline;
+  width: 102vw;
+  margin-bottom: -5px;
 }
 
 .features-header {
@@ -206,8 +206,8 @@ a:hover {
 
 .footer img {
   grid-column-start: baseline;
-  margin-right: -37px;
-  margin-bottom: -37px;
+  margin-right: -3px;
+  margin-bottom: -3px;
 }
 
 @media screen and (min-width: 768px) {
