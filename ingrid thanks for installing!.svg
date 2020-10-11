@@ -1,0 +1,19 @@
+<svg id="ingrid_thanks_for_installing_" data-name="ingrid thanks for installing!" xmlns="http://www.w3.org/2000/svg" width="210" height="39" viewBox="0 0 210 39">
+  <text id="_9:10_AM" data-name="9:10 AM" transform="translate(156 3)" fill="#b4b4b4" font-size="12" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="11">9:10 AM</tspan></text>
+  <text id="ingrid_bot" data-name="ingrid bot" transform="translate(48 14)" font-size="14" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">ingrid bot</tspan></text>
+  <g id="APP" transform="translate(117 3)">
+    <rect id="app_background" data-name="app background" width="31" height="13" transform="translate(0)" fill="#f8f7f8"/>
+    <text id="APP-2" data-name="APP" transform="translate(4 11)" fill="#b4b4b4" font-size="12" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="0">APP</tspan></text>
+  </g>
+  <g id="Ingrid_avatar" data-name="Ingrid avatar" transform="translate(0 2)">
+    <g id="Formen_och_färgerna" data-name="Formen och färgerna">
+      <rect id="white_bottom" data-name="white bottom" width="38" height="36" rx="4" transform="translate(0 1)" fill="#fff"/>
+      <path id="Lila_tri" data-name="Lila tri" d="M37.053,3.559l-20,6-17,5v-4c0-3.511,1.927-7,5-7Z" transform="translate(-0.053 -1.559)" fill="#5e1d66"/>
+      <path id="Pink_tri" data-name="Pink tri" d="M59.908,74.783v7c0,3.02-3.179,5-6,5h-30Z" transform="translate(-21.908 -51.783)" fill="#f7acbb"/>
+      <text id="i" transform="translate(16 26)" font-size="20" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">i</tspan></text>
+      <g id="Formen">
+        <path id="Path_4" data-name="Path 4" d="M34,2a2.163,2.163,0,0,1,2,2V33a2.163,2.163,0,0,1-2,2H4a2.163,2.163,0,0,1-2-2V4A2.163,2.163,0,0,1,4,2H34m0-2H4A3.935,3.935,0,0,0,0,4V33a3.935,3.935,0,0,0,4,4H34a3.935,3.935,0,0,0,4-4V4A3.935,3.935,0,0,0,34,0Z" transform="translate(0)"/>
+      </g>
+    </g>
+  </g>
+</svg>
