@@ -69,6 +69,13 @@ a:hover {
   min-height: 100vh;
   height: min-content;
 }
+.content-privacy {
+  padding: 100px;
+}
+
+.content-privacy p {
+  font-size: 16px;
+}
 
 .lilatri-top {
   width: 40vw;
