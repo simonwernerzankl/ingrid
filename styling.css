@@ -67,7 +67,7 @@ a:hover {
   display: grid;
   grid-template-columns: 15% 45% 1fr 10%;
   grid-template-rows: 3% 15% 1fr auto;
-  min-height: 100vh;
+  min-height: 103vh;
   height: min-content;
 }
 .content-privacy {
@@ -104,7 +104,7 @@ a:hover {
 
 .hero-content h1 {
   padding-top: 25px;
-  font-size: 55px;
+  font-size: 40px;
 }
 
 .hero-content h3 {
@@ -118,7 +118,6 @@ a:hover {
 
 .slack-client {
   display: none;
-  padding-top: 30px;
 }
 
 .pink-hero {
