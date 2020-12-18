@@ -205,18 +205,18 @@ a:hover {
   .top-hero {
     display: grid;
     grid-template-columns: 15% 1fr 10%;
-    grid-template-rows: 3% 20% 30% 1fr;
+    grid-template-rows: 20% 30% 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
     max-height: 103vh;
     height: min-content;
   }
 
-  .header-menu-items {
-    grid-column: 3 / span 2;
-    grid-row-start: 2;
-  }
-
   .header-menu-logo {
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-column-start: 2;
   }
 
@@ -234,7 +234,7 @@ a:hover {
 
   .hero-content {
     grid-column-start: 2;
-    grid-row: 3 / span 2;
+    grid-row: 2;
   }
 
   .hero-content h3 {
@@ -246,11 +246,11 @@ a:hover {
   }
 
   .slack-client {
-    grid-column: 2 / span 2;
-    grid-row: 4 / span 2;
-    padding-top: 60px;
+    grid-column: 2;
+    grid-row: 4;
     max-width: 80%;
-    display:grid;
+    max-height: 30%;
+    display:none;
   }
 
   .pink-hero {
@@ -376,6 +376,9 @@ a:hover {
     grid-column: 4 / span 2;
     grid-row: 3 / span 2;
     max-width: 80%;
+    max-height: 100%;
+    padding-top: 25px;
+    display: grid;
   }
 
   .pink-hero {
